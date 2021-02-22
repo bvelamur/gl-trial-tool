@@ -1,0 +1,31 @@
+.scorecard-bbox {
+    padding: 10px;
+}
+
+.scorecard-item{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    background-color: green;
+    opacity: 0.6;
+    padding: 10px;
+
+    .header {
+        width: 100%;
+        margin: 5px;
+        background-color: grey;
+
+
+        .header-item {
+            width: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .description {
+            width: 100%;
+            margin-bottom: 5px;
+        }       
+    }
+}
