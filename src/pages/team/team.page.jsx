@@ -1,9 +1,10 @@
 import CardCollection from '../../components/card-collection/card-collection.component'
+import { Grid } from '@material-ui/core'
 
 const TeamPage = () => (
-    <div>
+    <Grid item container>
         <CardCollection />
-    </div>
+    </Grid>
 );
 
 export default TeamPage;

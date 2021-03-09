@@ -3,9 +3,9 @@ import { Component } from "react";
 import { Grid } from "@material-ui/core";
 import { Switch, Route } from "react-router-dom";
 import HeaderBar from "./pages/header/header.page";
-import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.page";
+import SignInPage from "./pages/sign-in-and-sign-up/sign-in.page";
+import SignUpPage from "./pages/sign-in-and-sign-up/sign-up.page";
 import ObjectivesPage from './pages/objectives/objectives.page'
-import WorkScopePage from './pages/work-scope/work-scope.page'
 import TeamPage from './pages/team/team.page'
 import ScorecardPage from './pages/scorecard/scorecard.page'
 
@@ -16,16 +16,14 @@ class App extends Component {
         <Grid item>
           <HeaderBar />
         </Grid>
-        <Grid item container spacing={2}>
-          <Grid item>
+        <Grid item container>
             <Switch>
-              <Route exact path="/" component={SignInAndSignUpPage} />
+              <Route exact path="/" component={SignInPage} />
+              <Route exact path="/signup" component={SignUpPage} />
               <Route path="/objectives" component={ObjectivesPage} />
-              <Route path="/work-scope" component={WorkScopePage} />
               <Route path="/team" component={TeamPage} />
               <Route path="/scorecard" component={ScorecardPage} />
             </Switch>
-          </Grid>
         </Grid>
       </Grid>
     );

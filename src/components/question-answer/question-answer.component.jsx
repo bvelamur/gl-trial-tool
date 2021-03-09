@@ -1,11 +1,8 @@
-import './question-answer.styles.scss'
-import {TextField, Typography} from '@material-ui/core'
+import {TextField, Typography, Box} from '@material-ui/core'
 
 const QuestionAnswer = ({QuestionText, ResponseLabel}) => (
-    <div className="q-and-a">
-        <span className='question'>
-        <Typography variant='subtitle2'>{QuestionText}</Typography>
-        </span>
+    <Box p={4}>
+        <Typography variant='h5'>{QuestionText}</Typography>
         <TextField
             id="outlined-multiline-static"
             label={ResponseLabel}
@@ -14,7 +11,7 @@ const QuestionAnswer = ({QuestionText, ResponseLabel}) => (
             variant="outlined"
             fullWidth
         />
-    </div>
+    </Box>
 );
 
 export default QuestionAnswer;

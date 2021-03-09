@@ -9,7 +9,6 @@ const HeaderBar = () => {
         <Typography variant="h6">Gladiator Labs Pilot Tool</Typography>
             <ListItemLink to="/" primary="Login"/>
             <ListItemLink to="/objectives" primary="Objectives"/>
-            <ListItemLink to="/work-scope" primary="Work Scope"/>
             <ListItemLink to="/team" primary="Team"/>
             <ListItemLink to="/scorecard" primary="Scorecard"/>
       </Toolbar>
